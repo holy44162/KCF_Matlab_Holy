@@ -1,4 +1,4 @@
-function precisions = precision_plot(positions, ground_truth, title, show)
+function [precisions,distances] = precision_plot(positions, ground_truth, title, show)
 %PRECISION_PLOT
 %   Calculates precision for a series of distance thresholds (percentage of
 %   frames where the distance to the ground truth is within the threshold).
