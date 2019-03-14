@@ -138,7 +138,7 @@ function [positions, time] = tracker_Holy(video_path, img_files, pos, target_sz,
         end
         % end of addition 1903131704
 
-		if (frame == 1) || (mod(frame,100) == 0) %first frame, train with a single image
+		if (frame == 1) || (mod(frame,400) == 0) %first frame, train with a single image
 			model_alphaf = alphafInitial;
 			model_xf = xfInitial;
 		else
